@@ -7,6 +7,29 @@ body {
     background-attachment: fixed;
     color: white;
 }
+/* 1. Reset de la box-model : C'est la base de tout responsive propre */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Images 100% responsives */
+img, video {
+  max-width: 100%; /* L'image ne débordera jamais de son conteneur */
+  height: auto;    /* Maintient le ratio pour éviter la déformation */
+  display: block;  /* Pour enlever l'espace indésirable sous les images (ligne de base) */
+}
+
+/* 3. Simplification des conteneurs pour qu'ils s'étirent */
+.conteneur, .wrapper {
+  /* On utilise des valeurs max pour ne pas que ce soit trop large sur un écran PC */
+  max-width: 1200px; 
+  /* On centre automatiquement le conteneur */
+  margin-left: auto;
+  margin-right: auto;
+  /* Optionnel : un peu de padding pour ne pas coller les bords sur mobile */
+  padding-left: 15px;
+  padding-right: 15px;
+}
 #Title {
     text-align: center;
     display: inline-block; 
