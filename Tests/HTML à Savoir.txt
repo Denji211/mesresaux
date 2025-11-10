@@ -1,5 +1,0 @@
-HTML à Savoir :
-<a> mettre un lien
-<br> a la ligne
-
-Mettre une feuille CSS : <link rel="stylesheet" href="style.css">
